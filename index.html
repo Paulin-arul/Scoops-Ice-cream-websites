@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoops-Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="header-title">
+                <h1>Scoops</h1>
+                <p>Your Ice Cream Destination</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="main.html">Main</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+    <main>
+        <section class="background-section">
+            <h1>Savor Moments of Sweetness at Scoops Ice Cream</h1>
+            <p>Welcome to Scoops Ice Cream, where every scoop is a taste of happiness. Indulge in handcrafted flavors that ignite joy and create memories. Join us in celebrating the simple pleasure of a delicious treat, crafted with care and served with a smile. Explore our flavors, share a moment with loved ones, and discover why Scoops Ice Cream is more than just dessert—it's a journey of delightful flavors and unforgettable experiences. Start your sweet adventure with us today!</p>
+            
+            <div class="image-gallery">
+                <img src="chocolate-ice-cream.webp" alt="Ice Cream 1" class="ice-cream-image">
+                <img src="vanilla.jpg" alt="Ice Cream 2" class="ice-cream-image">
+                <img src="images.jpeg" alt="Ice Cream 3" class="ice-cream-image">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

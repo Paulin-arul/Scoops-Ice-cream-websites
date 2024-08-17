@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoops-About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="header-title">
+                <h1>Scoops</h1>
+                <p>Your Ice Cream Destination</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="main.html">Main</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section">
+            <div class="text-content">
+                <h1>Welcome to Scoops Ice Cream!</h1>
+                <p>Indulge in the finest handcrafted ice creams, made with love and passion. At Scoops, we believe in creating moments of happiness with every scoop.</p>
+
+                <h2>Our Flavors</h2>
+                <p>Explore a delightful array of flavors that cater to every palate. From classic favorites like Vanilla Bean and Chocolate Fudge to exotic creations like Mango Tango and Salted Caramel Swirl, there's something to satisfy every craving.</p>
+
+                <h2>Why Choose Scoops Ice Cream?</h2>
+                <ul>
+                    <li><strong>Quality Ingredients:</strong> We source only the finest ingredients to ensure every bite is rich and creamy.</li>
+                    <li><strong>Local and Fresh:</strong> Our ice creams are made fresh daily, supporting local farms and communities.</li>
+                    <li><strong>Exceptional Service:</strong> We're dedicated to providing a memorable experience, one scoop at a time.</li>
+                </ul>
+
+                <h2>Visit Us</h2>
+                <p>Discover our cozy parlors nestled in Chennai, where you can enjoy our ice creams in a warm and inviting atmosphere. Whether you're treating yourself or sharing with loved ones, Scoops Ice Cream promises a scoop of happiness in every visit.</p>
+            </div>
+            <div class="image-content">
+                <img src="scoops.avif" alt="Ice Cream Cover" class="small-cover-image">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoops-Main</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="header-title">
+                <h1>Scoops</h1>
+                <p>Your Ice Cream Destination</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="main.html">Main</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="Vanilla bean.jpeg" alt="Vanilla Bean" class="menu-image">
+                    <h3>Vanilla Bean</h3>
+                    <p>A classic favorite made with the finest vanilla beans.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Chocolate fudge.jpeg" alt="Chocolate Fudge" class="menu-image">
+                    <h3>Chocolate Fudge</h3>
+                    <p>Rich and creamy chocolate ice cream with fudge swirls.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Mango tango.jpeg" alt="Mango Tango" class="menu-image">
+                    <h3>Mango Tango</h3>
+                    <p>Refreshing mango ice cream with a tangy twist.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Mint Chocolate.jpg" alt="Mint Chocolate" class="menu-image">
+                    <h3>Mint Chocolate</h3>
+                    <p>A green mint ice cream with large flakes of milk chocolate. </p>
+                </div>
+                <div class="menu-item">
+                    <img src="Fresh Strawberry.jpeg" alt="Fresh Strawberry" class="menu-image">
+                    <h3>Fresh Strawberry</h3>
+                    <p>The classic made with strawberry puree and sliced strawberries. Also available in a no-sugar-added ice cream.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="orea.jpg" alt="Oreo Cheesecake" class="menu-image">
+                    <h3>Oreo Cheesecake</h3>
+                    <p>A Vanillia ice cream covered with tons of oreo crumbles</p>
+                </div>
+                <!-- Add more menu items as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
